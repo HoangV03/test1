@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ quản lý bán hàng</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #4CAF50;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .content {
+            padding: 20px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .product {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            width: calc(33.333% - 40px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+        .product h3 {
+            text-align: center;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product p {
+            text-align: center;
+            color: #555;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quản lý bán hàng tạp hóa</h1>
+        </header>
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#">Sản phẩm</a>
+            <a href="#">Đơn hàng</a>
+            <a href="#">Khách hàng</a>
+            <a href="#">Báo cáo</a>
+            <a href="#">Liên hệ</a>
+        </nav>
+        <div class="content">
+            <h2>Sản phẩm nổi bật</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://via.placeholder.com/300x200" alt="Sản phẩm 1">
+                    <h3>Sản phẩm 1</h3>
+                    <p>Giá: 500,000 VND</p>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/300x200" alt="Sản phẩm 2">
+                    <h3>Sản phẩm 2</h3>
+                    <p>Giá: 1,000,000 VND</p>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/300x200" alt="Sản phẩm 3">
+                    <h3>Sản phẩm 3</h3>
+                    <p>Giá: 750,000 VND</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 Hệ thống quản lý bán hàng</p>
+        </footer>
+    </div>
+</body>
+</html>
